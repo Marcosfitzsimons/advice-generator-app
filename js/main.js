@@ -1,14 +1,28 @@
-const fetchAdvice = async () => {
-  const res = await fetch("https://api.adviceslip.com/advice");
-  const data = await res.json();
+let btn = document.querySelector(".icon-dice-container");
 
+const fetchAdvice = async () => {
+  try {
+    const res = await fetch("https://api.adviceslip.com/advice", {
+      cache: "no-cache",
+    });
+    if (!res.ok) {
+      throw new Error("Api connection problem");
+    }
+    const data = await res.json();
+    return data.slip;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const setAdvice = async () => {
+  let advice = await fetchAdvice();
   let id = document.querySelector(".advice-id");
   let adviceText = document.querySelector(".advice-text");
 
-  id.innerHTML = `#${data.slip.id}`;
-  adviceText.innerHTML = `❝${data.slip.advice}❞`;
+  id.textContent = `ADVICE #${advice.id}`;
+  adviceText.textContent = `❝${advice.advice}❞`;
 };
 
-let btn = document.querySelector(".icon-dice-container");
-
-btn.addEventListener("click", fetchAdvice);
+btn.addEventListener("click", setAdvice);
+setAdvice();
