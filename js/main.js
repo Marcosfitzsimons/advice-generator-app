@@ -26,3 +26,5 @@ const setAdvice = async () => {
 
 btn.addEventListener("click", setAdvice);
 setAdvice();
+
+// asd
