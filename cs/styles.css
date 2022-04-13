@@ -16,7 +16,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  transition: 0.5rem;
+  transition: 0.3s;
 }
 
 *,
