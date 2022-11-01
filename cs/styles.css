@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap");
 
 :root {
   /* Colors */
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
@@ -40,8 +40,8 @@ body {
 }
 
 .container {
-    width: min(90%, 120rem);
-    margin: 0 auto;
+  width: min(90%, 120rem);
+  margin: 0 auto;
 }
 
 /* ==============
@@ -49,89 +49,90 @@ body {
 ============== */
 
 .main {
-    background-color: var(--darkGrayishBlue);
-    border-radius: 1.2rem;
-    padding: 4rem 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  background-color: var(--darkGrayishBlue);
+  border-radius: 1.2rem;
+  padding: 4rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .advice-p {
-    color: var(--neonGreen);
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: .4rem;
-    margin: 1rem;
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+  margin: 1rem;
 }
 
 .advice-text {
-    margin: 0 2rem;
-    font-size: 2.4rem;
-    text-align: center;
-    color: var(--lightCyan);
+  margin: 0 2rem;
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--lightCyan);
 }
 
 .quote {
-    font-size: 1.5rem;
-    position: relative;
-    bottom: .8rem;
-    margin-right: .2rem;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 0.8rem;
+  margin-right: 0.2rem;
 }
 
 .divider {
-    background-image: url(../images/pattern-divider-mobile.svg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 2rem;
-    margin: 2rem 0 0 0;
+  background-image: url(../images/pattern-divider-mobile.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 2rem;
+  margin: 2rem 0 0 0;
 }
 
 .icon-dice-container {
-    border-radius: 5rem;
-    padding: 2rem;
-    height: 6.5rem;
-    width: 6.5rem;
-    background-color: var(--neonGreen);
-    position: relative;
-    top: 3.3rem;
-    cursor: pointer;
-    transition: .3s;
+  border-radius: 5rem;
+  padding: 2rem;
+  height: 6.5rem;
+  width: 6.5rem;
+  background-color: var(--neonGreen);
+  position: relative;
+  top: 3.3rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .icon-dice-container:hover {
-    box-shadow: 0px 0px 10px 5px hsl(150, 50%, 41%);
+  box-shadow: 0px 0px 10px 5px hsl(150, 50%, 41%);
 }
 
 .attribution {
-    color: var(--lightCyan);
-    width: 30rem;
-    text-align: center;
-    margin-top: 5rem;
-    opacity: .6;
-    transition: .3s;
+  color: var(--lightCyan);
+  width: 30rem;
+  text-align: center;
+  margin-top: 5rem;
+  opacity: 0.6;
+  transition: 0.3s;
 }
-.front-end-mentor, .me {
-    color: var(--neonGreen);
-    text-decoration: none;
+.front-end-mentor,
+.me {
+  color: var(--neonGreen);
+  text-decoration: none;
 }
 
 .attribution:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media (min-width: 750px) {
-    .divider {
-        background-image: url(../images/pattern-divider-desktop.svg);
-    }
-    .main {
-        width: 60rem;
-    }
-    .advice-text {
-        margin: 0 4rem;
-    }
+  .divider {
+    background-image: url(../images/pattern-divider-desktop.svg);
+  }
+  .main {
+    width: 60rem;
+  }
+  .advice-text {
+    margin: 0 4rem;
+  }
 }
